@@ -1,64 +1,34 @@
 # curly-funicular
 Module9-Challenge-6-23-23
 
-# <Your-Project-Title>
-
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+Having a README generator is awesome! This project is beneficial for all coders. This can save a coder time in finding a README.md guide, and having prompts kind of activate your mind and interaction, putting you in code mode. 
+Figuring out the rendering of the license badge was the hardest part in this challenge. Thankfully there was hit on google, leading me to lukas-h, and it helped things start chugging along. 
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
-
-## Table of Contents (Optional)
-
-Add table of contents
 ## Installation
-
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Either copy and paste my files in a code editor or fork my files. 
+Have node.js downloaded, and a reliable command line.
 
 ## Usage
+Assuming you have forked or downloaded my files and have access to node.js,
+Open main folder in a command line application.
+Type node index.js
+There you will be prompted for information to create README.md.
+You will be prompted to enter a title, description, installation instructions, usage information, provide credits, select a license, contribution guidelines, test instructions, and it will ask to for your github username and email incase there are questions. Then your readers can contact you by those basis. 
+If successful you will recieve 'README.md successfully generated!'  if not, an error will show on console. 
+Upon sucession, a README.md will create in the main folder, and the answers will display in corresponding spaces. When you view the file in github, the table of contents can jump to targeting areas, and license badge will show near title, and will show a link for further information on the license. 
+If you entered a correct github username it should create a link that can navigate to your github page. 
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
+## Visuals
+![2023-06-24](https://github.com/abisinchan/curly-funicular/assets/132783183/46fa905f-045a-44e0-b85d-765d1126e426)
 ## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+lukas-h for badge source
+https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+MIT
 
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.Do 
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+## Repo
+https://github.com/abisinchan/curly-funicular.git

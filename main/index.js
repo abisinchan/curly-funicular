@@ -1,11 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./generateMarkdown');
+const generateMarkdown = require('./generateMarkdown'); // import from generate markdown
 
-
+//passing through answers from prompt
 function generateREADME(answers) {
     const readmeContent = generateMarkdown(answers);
-  
+//writing the README.md
     fs.writeFile('README.md', readmeContent, (err) => {
       if (err) {
         console.error(err);
@@ -14,7 +14,7 @@ function generateREADME(answers) {
       }
     });
   }
-
+//function for prompts.
 function main() {
   inquirer.prompt([
     {
@@ -74,12 +74,12 @@ function main() {
       message: 'Enter your email address:',
     },
   ])
-    .then((answers) => {
-      generateREADME(answers);
+    .then((answers) => { 
+      generateREADME(answers);//if no error it will call this function and start passing through the ansers
     })
     .catch((err) => {
-      console.error(err);
+      console.error(err); // else it will throw an error.
     });
 }
-
+// caling prompt
 main();
