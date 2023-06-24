@@ -10,6 +10,7 @@ ${answers.description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
+- [Credits](#credits)
 - [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
@@ -20,6 +21,9 @@ ${answers.installation}
 
 ## Usage
 ${answers.usage}
+
+## Credits
+${answers.credits}
 
 ## License
 ${answers.license}
@@ -68,10 +72,23 @@ function main() {
       message: 'Provide usage information:',
     },
     {
-      type: 'input',
-      name: 'license',
-      message: 'Choose a license:',
-    },
+        type: 'input',
+        name: 'credits',
+        message: 'Provide credits:',
+      },
+      {
+        type: 'list',
+        name: 'license',
+        message: 'Select license?',
+        choices: [
+          "none",
+          "MIT",
+          "GNU GPLv3",
+          "Mozilla Public License 2.0",
+          "Apache License 2.0",
+      
+        ],
+      },
     {
       type: 'input',
       name: 'contributing',
@@ -102,12 +119,3 @@ function main() {
 }
 
 main();
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
