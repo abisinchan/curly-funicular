@@ -10,7 +10,6 @@ function renderLicenseBadge(license) {
       return '[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
     case 'GPL 3.0':
       return '[![License: GPL 3.0](https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
-    // Add more cases for other licenses as needed
     default:
       return '';
   }
@@ -26,7 +25,6 @@ function renderLicenseLink(license) {
       return 'https://opensource.org/licenses/Apache-2.0';
     case 'GPL 3.0':
       return 'https://www.gnu.org/licenses/gpl-3.0';
-    // Add more cases for other licenses as needed
     default:
       return '';
   }
@@ -42,7 +40,6 @@ function renderLicenseSection(license) {
       return 'This application is covered under the [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0).';
     case 'GPL 3.0':
       return 'This application is covered under the [GPL 3.0 License](https://www.gnu.org/licenses/gpl-3.0).';
-    // Add more cases for other licenses as needed
     default:
       return '';
   }

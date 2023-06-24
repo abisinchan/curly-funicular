@@ -50,7 +50,6 @@ function main() {
         "none",
         "MIT",
         "GNU GPLv3",
-        "Mozilla Public License 2.0",
         "Apache License 2.0",
       ],
     },
