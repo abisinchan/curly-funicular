@@ -1,46 +1,12 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./generateMarkdown');
+
 
 function generateREADME(answers) {
-    const readmeTemplate = `# ${answers.title}
+    const readmeContent = generateMarkdown(answers);
   
-  ## Description
-  ${answers.description}
-  
-  ## Table of Contents
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Credits](#credits)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  
-  ## Installation
-  ${answers.installation}
-  
-  ## Usage
-  ${answers.usage}
-  
-  ## Credits
-  ${answers.credits}
-  
-  ## License
-  ${answers.license}
-  
-  ## Contributing
-  ${answers.contributing}
-  
-  ## Tests
-  ${answers.tests}
-  
-  ## Questions
-  For any questions or concerns, please contact:
-  - GitHub: [${answers.username}](https://github.com/${answers.username})
-  - Email: [${answers.email}](mailto:${answers.email})
-  `;
-  
-    fs.writeFile('README.md', readmeTemplate, (err) => {
+    fs.writeFile('README.md', readmeContent, (err) => {
       if (err) {
         console.error(err);
       } else {
@@ -48,7 +14,6 @@ function generateREADME(answers) {
       }
     });
   }
-  
 
 function main() {
   inquirer.prompt([
